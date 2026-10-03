@@ -15,7 +15,7 @@ Serial.begin(9600);
 void loop() {
 if(Serial.available()){
   t = Serial.read();
-  Serial.println(t);
+  Serial.print(t);
 }
  
 if(t == 'F'){            //move forward(all motors rotate in forward direction)
